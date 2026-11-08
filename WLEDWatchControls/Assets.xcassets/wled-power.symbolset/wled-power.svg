@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="3300" height="2200">
+ <g id="Guides">
+  <line id="left-margin-Regular-S" x1="1388" x2="1388" y1="606" y2="726" stroke="#00AEEF" stroke-width="0.5"/>
+  <line id="right-margin-Regular-S" x1="1496" x2="1496" y1="606" y2="726" stroke="#00AEEF" stroke-width="0.5"/>
+  <line id="Baseline-S" x1="263" x2="3036" y1="696" y2="696" stroke="#27AAE1" stroke-width="0.5"/>
+  <line id="Capline-S" x1="263" x2="3036" y1="625.54" y2="625.54" stroke="#27AAE1" stroke-width="0.5"/>
+  <line id="left-margin-Regular-M" x1="1388" x2="1388" y1="1036" y2="1156" stroke="#00AEEF" stroke-width="0.5"/>
+  <line id="right-margin-Regular-M" x1="1496" x2="1496" y1="1036" y2="1156" stroke="#00AEEF" stroke-width="0.5"/>
+  <line id="Baseline-M" x1="263" x2="3036" y1="1126" y2="1126" stroke="#27AAE1" stroke-width="0.5"/>
+  <line id="Capline-M" x1="263" x2="3036" y1="1055.54" y2="1055.54" stroke="#27AAE1" stroke-width="0.5"/>
+  <line id="left-margin-Regular-L" x1="1388" x2="1388" y1="1466" y2="1586" stroke="#00AEEF" stroke-width="0.5"/>
+  <line id="right-margin-Regular-L" x1="1496" x2="1496" y1="1466" y2="1586" stroke="#00AEEF" stroke-width="0.5"/>
+  <line id="Baseline-L" x1="263" x2="3036" y1="1556" y2="1556" stroke="#27AAE1" stroke-width="0.5"/>
+  <line id="Capline-L" x1="263" x2="3036" y1="1485.54" y2="1485.54" stroke="#27AAE1" stroke-width="0.5"/>
+ </g>
+ <g id="Symbols">
+  <g id="Regular-S" transform="matrix(1.35 0 0 1.35 1388 712)">
+   <path d="M16,-37 A24,24 0 1 1 64,-37 A24,24 0 1 1 16,-37 Z M28,-17 H52 V-9 H28 Z M32,-6 H48 V1 H32 Z M37.40,-67.00 L37.40,-77.00 L42.60,-77.00 L42.60,-67.00 Z M59.37,-60.05 L66.45,-67.12 L70.12,-63.45 L63.05,-56.37 Z M16.95,-56.37 L9.88,-63.45 L13.55,-67.12 L20.63,-60.05 Z M70.00,-39.60 L80.00,-39.60 L80.00,-34.40 L70.00,-34.40 Z M10.00,-34.40 L0.00,-34.40 L-0.00,-39.60 L10.00,-39.60 Z"/>
+  </g>
+  <g id="Regular-M" transform="matrix(1.35 0 0 1.35 1388 1142)">
+   <path d="M16,-37 A24,24 0 1 1 64,-37 A24,24 0 1 1 16,-37 Z M28,-17 H52 V-9 H28 Z M32,-6 H48 V1 H32 Z M37.40,-67.00 L37.40,-77.00 L42.60,-77.00 L42.60,-67.00 Z M59.37,-60.05 L66.45,-67.12 L70.12,-63.45 L63.05,-56.37 Z M16.95,-56.37 L9.88,-63.45 L13.55,-67.12 L20.63,-60.05 Z M70.00,-39.60 L80.00,-39.60 L80.00,-34.40 L70.00,-34.40 Z M10.00,-34.40 L0.00,-34.40 L-0.00,-39.60 L10.00,-39.60 Z"/>
+  </g>
+  <g id="Regular-L" transform="matrix(1.35 0 0 1.35 1388 1572)">
+   <path d="M16,-37 A24,24 0 1 1 64,-37 A24,24 0 1 1 16,-37 Z M28,-17 H52 V-9 H28 Z M32,-6 H48 V1 H32 Z M37.40,-67.00 L37.40,-77.00 L42.60,-77.00 L42.60,-67.00 Z M59.37,-60.05 L66.45,-67.12 L70.12,-63.45 L63.05,-56.37 Z M16.95,-56.37 L9.88,-63.45 L13.55,-67.12 L20.63,-60.05 Z M70.00,-39.60 L80.00,-39.60 L80.00,-34.40 L70.00,-34.40 Z M10.00,-34.40 L0.00,-34.40 L-0.00,-39.60 L10.00,-39.60 Z"/>
+  </g>
+ </g>
+</svg>

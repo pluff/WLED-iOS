@@ -21,8 +21,17 @@ struct DeviceListWatchView: View {
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
         // Reopen the last device at launch. The list may arrive after launch, so retry on changes.
-        .onAppear(perform: openLastDevice)
+        .onAppear {
+            openLastDevice()
+            shareSelectedDevice()
+        }
         .onChange(of: store.devices) { openLastDevice() }
+        // The Control Center controls act on this device.
+        .onChange(of: selectedDevice) { shareSelectedDevice() }
+    }
+
+    private func shareSelectedDevice() {
+        WatchSharedStore.lastDevice = selectedDevice
     }
 
     private func openLastDevice() {
