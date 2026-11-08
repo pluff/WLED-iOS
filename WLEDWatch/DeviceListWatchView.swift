@@ -3,7 +3,7 @@ import SwiftUI
 /// Two horizontal pages: the device list (left) and the selected device's controls (right).
 /// Swiping right from the controls goes back to the list.
 struct DeviceListWatchView: View {
-    @EnvironmentObject private var store: WatchDeviceStore
+    @Environment(WatchDeviceStore.self) private var store
     @AppStorage("lastDeviceID") private var lastDeviceID = ""
     @State private var page = Page.list
     @State private var didAutoOpen = false
@@ -22,7 +22,7 @@ struct DeviceListWatchView: View {
         .tabViewStyle(.page(indexDisplayMode: .never))
         // Reopen the last device at launch. The list may arrive after launch, so retry on changes.
         .onAppear(perform: openLastDevice)
-        .onChange(of: store.devices) { _, _ in openLastDevice() }
+        .onChange(of: store.devices) { openLastDevice() }
     }
 
     private func openLastDevice() {
@@ -73,9 +73,9 @@ struct DeviceListWatchView: View {
     private var controlPage: some View {
         if let device = selectedDevice {
             NavigationStack {
-                // `id` recreates the controller when another device is picked.
+                // `id` recreates the controller when another device is picked or its address changes.
                 DeviceControlView(device: device, isActive: page == .control)
-                    .id(device.id)
+                    .id(device)
             }
         } else {
             Text("Select a device")

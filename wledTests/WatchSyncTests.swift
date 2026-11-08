@@ -8,12 +8,14 @@ struct WatchSyncTests {
             WatchDevice(id: "AA:BB:CC:DD:EE:FF", name: "Desk", address: "192.168.1.10"),
             WatchDevice(id: "11:22:33:44:55:66", name: "TV", address: "wled-tv.local")
         ]
-        let data = try #require(WatchSync.encode(devices))
-        #expect(WatchSync.decode(data) == devices)
+        let data = try WatchSync.encode(devices)
+        #expect(try WatchSync.decode(data) == devices)
     }
 
-    @Test func invalidDataDecodesToEmpty() {
-        #expect(WatchSync.decode(Data("nope".utf8)).isEmpty)
+    @Test func invalidDataThrows() {
+        #expect(throws: DecodingError.self) {
+            try WatchSync.decode(Data("nope".utf8))
+        }
     }
 
     @Test func nightlightStateDecodes() throws {

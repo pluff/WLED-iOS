@@ -10,7 +10,7 @@ import SwiftUI
 ///
 /// Tapping the brightness quadrant opens `BrightnessView` (bar + Digital Crown).
 struct DeviceControlView: View {
-    @StateObject private var controller: DeviceController
+    @State private var controller: DeviceController
     @State private var showBrightness = false
 
     /// `false` while the page is off-screen: stops polling.
@@ -18,7 +18,7 @@ struct DeviceControlView: View {
 
     init(device: WatchDevice, isActive: Bool = true) {
         self.isActive = isActive
-        _controller = StateObject(wrappedValue: DeviceController(device: device))
+        _controller = State(initialValue: DeviceController(device: device))
     }
 
     var body: some View {
@@ -39,16 +39,10 @@ struct DeviceControlView: View {
         .sheet(isPresented: $showBrightness) {
             BrightnessView(controller: controller)
         }
-        .onAppear { updateActive() }
-        .onChange(of: isActive) { _, _ in updateActive() }
-        .onDisappear { controller.stopPolling() }
-    }
-
-    private func updateActive() {
-        if isActive {
-            controller.startPolling()
-        } else {
-            controller.stopPolling()
+        // Polls while the page is visible; SwiftUI cancels the task when it goes off-screen.
+        .task(id: isActive) {
+            guard isActive else { return }
+            await controller.poll()
         }
     }
 
@@ -84,7 +78,7 @@ struct DeviceControlView: View {
         }
         .buttonStyle(.bordered)
         .accessibilityLabel("Brightness")
-        .accessibilityValue("\(Int(controller.brightness.rounded())) of 255")
+        .accessibilityValue("\(Int(controller.brightness.rounded())) of \(Int(DeviceController.maxBrightness))")
         .accessibilityHint("Opens the brightness control")
     }
 
