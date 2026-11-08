@@ -3,7 +3,7 @@ import Foundation
 /// Data shared between the watch app and the Control Center controls (separate process),
 /// through an App Group.
 enum WatchSharedStore {
-    static let appGroup = "group.ca.cgagnier.wled-native.pluff-dev"
+    static let appGroup = "group.ca.cgagnier.wled-native"
 
     private static let lastDeviceKey = "lastDevice"
     private static let preNightlightPrefix = "preNightlightBrightness."

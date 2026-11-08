@@ -477,20 +477,20 @@
 				CODE_SIGN_ENTITLEMENTS = WLEDWatch/WLEDWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6JW3JHLYWU;
+				DEVELOPMENT_TEAM = RWLNCUSDCJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WLEDWatch/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WLED;
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "WLED uses the local network to control your WLED devices.";
 				INFOPLIST_KEY_WKApplication = YES;
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "ca.cgagnier.wled-native.pluff-dev";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "ca.cgagnier.wled-native";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native.pluff-dev.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -511,20 +511,20 @@
 				CODE_SIGN_ENTITLEMENTS = WLEDWatch/WLEDWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6JW3JHLYWU;
+				DEVELOPMENT_TEAM = RWLNCUSDCJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WLEDWatch/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WLED;
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "WLED uses the local network to control your WLED devices.";
 				INFOPLIST_KEY_WKApplication = YES;
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "ca.cgagnier.wled-native.pluff-dev";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "ca.cgagnier.wled-native";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native.pluff-dev.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -543,7 +543,7 @@
 				CODE_SIGN_ENTITLEMENTS = WLEDWatchControls/WLEDWatchControls.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6JW3JHLYWU;
+				DEVELOPMENT_TEAM = RWLNCUSDCJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WLEDWatchControls/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "WLED Controls";
@@ -554,7 +554,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native.pluff-dev.watchkitapp.controls";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native.watchkitapp.controls";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -572,7 +572,7 @@
 				CODE_SIGN_ENTITLEMENTS = WLEDWatchControls/WLEDWatchControls.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6JW3JHLYWU;
+				DEVELOPMENT_TEAM = RWLNCUSDCJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WLEDWatchControls/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "WLED Controls";
@@ -583,7 +583,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native.pluff-dev.watchkitapp.controls";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native.watchkitapp.controls";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -730,7 +730,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6JW3JHLYWU;
+				DEVELOPMENT_TEAM = RWLNCUSDCJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wled/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -745,7 +745,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native.pluff-dev";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -761,7 +761,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6JW3JHLYWU;
+				DEVELOPMENT_TEAM = RWLNCUSDCJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = wled/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -776,7 +776,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 7.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native.pluff-dev";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.cgagnier.wled-native";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
